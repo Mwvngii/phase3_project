@@ -7,6 +7,7 @@ The goal of my project is to generate insights and recommendations for business 
 
 ## Business Understanding/Problem
 Customer satisfaction is a critical aspect in the airline industry that quickly and directly impacts customer retention or customer drop off. The airline company is experiencing a significant decrease in customer retention.
+
 Forthwith, by predicting whether a passenger experiences satisfaction/dissatisfaction we will be able to identiify factors contributing to passenger dissatisfaction thus drawing actionable insights and recommendations to improve customer experience and reduce customer drop off.
 
 ## Data Understanding
@@ -24,10 +25,7 @@ _Model Performance_
 
 ## Insights/Conclusions
 From the implemented models,
-
-~ Logistic regression model ranks last in performance with the lowest accuracy although it does perform well.
-~ The decision tree model has slight improvement with a higher accuracy than the logistic model.
-~ The random forest model ranks best at performance with the highest accuracy with a balanced recall and precision showing the effectiveness of this model.
+The Logistic regression model ranks last in performance with the lowest accuracy although it does perform well. The decision tree model has slight improvement with a higher accuracy than the logistic model. The random forest model ranks best at performance with the highest accuracy with a balanced recall and precision showing the effectiveness of this model.
 
 <img src="Images/roc.png" />
 

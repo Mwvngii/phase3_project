@@ -6,27 +6,34 @@
 The goal of my project is to generate insights and recommendations for business stakeholders in Maybach Airlines from building a classification model that predicts passenger satisfaction or dissatisfaction based on various flight service factors. This will aid in boosting its services to customers and increase customer retention.
 
 ## Business Understanding/Problem
-Customer satisfaction is a critical aspect in the airline industry that quickly and directly impacts customer retention or customer drop off.
-
-The airline company is experiencing a significant decrease in customer retention. Forthwith, by predicting whether a passenger experiences satisfaction/dissatisfaction we will be able to identiify factors contributing to passenger dissatisfaction thus drawing actionable insights and recommendations to improve customer experience and reduce customer drop off.
+Customer satisfaction is a critical aspect in the airline industry that quickly and directly impacts customer retention or customer drop off. The airline company is experiencing a significant decrease in customer retention.
+Forthwith, by predicting whether a passenger experiences satisfaction/dissatisfaction we will be able to identiify factors contributing to passenger dissatisfaction thus drawing actionable insights and recommendations to improve customer experience and reduce customer drop off.
 
 ## Data Understanding
 The dataset is sourced from kaggle containing over 129000 records and 23 columns covering various flight service aspects such as inflight_entertainment, customer_satisfaction and more. It is a .csv file bearing the name airline_passenger_satisfaction.csv.
 
-## Modeling
+## Modeling and Evaluation
 We shall intergrate various models that will help us carry out our predictive analysis:
 
-The Logistic Regression Model(The Baseline Model)
-Decision Tree Model
-Random Forest Model
+* The Logistic Regression Model(The Baseline Model)
+* Decision Tree Model
+* Random Forest Model
 
-## Conclusions/Recommendations
-_Summary_ 
+_Model Performance_
+<img src="Images/modelperformance.png" />
 
-* The random forest model outperforms the other two models in terms of accurately predicting customer churn by customer satisfaction. It rates this with a 96% accuracy test result. It also has the highest AUC and highest true positive rating.
+## Insights/Conclusions
+From the implemented models,
 
-~ Some recommendations include :
+~ Logistic regression model ranks last in performance with the lowest accuracy although it does perform well.
+~ The decision tree model has slight improvement with a higher accuracy than the logistic model.
+~ The random forest model ranks best at performance with the highest accuracy with a balanced recall and precision showing the effectiveness of this model.
 
+<img src="Images/roc.png" />
+
+* The random forest model outperforms the other two models in terms of accurately predicting customer churn by customer satisfaction. It rates this with a 96% accuracy test result. It also has the highest AUC and highest true positive rating. After tuning the model, does register a slight improvement in accuracy for an optimal performance model.
+
+## Recommendationns
 1. Improving service qualities such as boosting in flight wifi, online boarding, seat comfort etc as such features directly affect customer satisfation.
 2. Enhancing business class services by improving premium services for these passengers.
 3. Opening loyalty programs such as offering discounts to loyal customers hence retaining such customers.
